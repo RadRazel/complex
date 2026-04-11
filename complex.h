@@ -5,9 +5,6 @@
 
 class Complex
 {
-private:
-    double re;
-    double im;
 
 public:
     // Конструкторы
@@ -60,6 +57,10 @@ public:
     //  Потоки 
     friend std::ostream& operator<<(std::ostream& os, const Complex& c);
     friend std::istream& operator>>(std::istream& is, Complex& c);
+
+private:
+    double re;
+    double im;
 };
 
 #endif
